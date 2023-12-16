@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+:root {
+    --trimColor: rgb(111, 218, 182);
+    --backgroundColor: rgb(235, 235, 235);
+    --contentHeight: calc(100vh - 22px);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Nav */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--trimColor);
+}
+
+#nav-buttons {
+    display: none;
+}
+
+#logo {
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(100, 194, 163);
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 10px;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    padding: 20px;
+    column-gap: 50px;
+}
+
+/* Left container */
+
+#left-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-container img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+/* Right container */
+
+h1 span {
+    color: var(--trimColor);
+}
+
+#right-container div span {
+    color: var(--trimColor);
+    font-weight: bold;
+}
+
+#right-container div, #right-container h1 {
+    padding: 10px;
+}
+
+/* Links container */
+
+links-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-btn:hover, #resume-download-btn:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    text-align: center;
+    background-color: var(--trimColor);
+}

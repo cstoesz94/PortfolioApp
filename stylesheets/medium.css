@@ -1,0 +1,19 @@
+#nav-buttons {
+    display: none;
+}
+
+#links-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#resume-download-btn {
+    background-color: var(--trimColor);
+    border: none;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 12px;
+    font-size: .8rem;
+}

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@import url("master.css") all;
+
+@import url("xsmall.css") (min-width: 1px) AND (min-height: 1px) AND (orientation: portrait);
+
+@import url("small.css") (min-width: 480px) AND (min-height: 320px) AND (orientation: landscape);
+
+@import url("medium.css") (min-width: 768px) AND (min-height: 1024px) AND (orientation: portrait);
+
+@import url("large.css") (min-width: 1024px) AND (min-height: 768px) AND (orientation: landscape);
+
+@import url("xlarge.css") (min-width: 1366px);
