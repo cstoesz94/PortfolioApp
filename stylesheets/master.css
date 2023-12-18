@@ -48,19 +48,6 @@ main {
     column-gap: 50px;
 }
 
-/* Left container */
-
-#left-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#left-container img {
-    width: 250px;
-    border-radius: 50%;
-}
-
 /* Right container */
 
 h1 span {
