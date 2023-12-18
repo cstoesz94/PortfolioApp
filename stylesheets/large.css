@@ -1,3 +1,13 @@
+#nav-buttons {
+    display: none;
+}
+
+#links-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #resume-download-btn {
     background-color: var(--trimColor);
     border: none;
@@ -6,10 +16,4 @@
     text-transform: uppercase;
     border-radius: 12px;
     font-size: .8rem;
-}
-
-#links-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
