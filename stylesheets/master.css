@@ -2,21 +2,29 @@
 
 :root {
     --trimColor: rgb(111, 218, 182);
-    --backgroundColor: rgb(235, 235, 235);
+    --backgroundColor: #1d1d20;
     --contentHeight: calc(100vh - 22px);
+    --textColor: #d1d1d1;
 }
 
 * {
     padding: 0;
     margin: 0;
     font-family: 'Mulish', sans-serif;
+    color: var(--textColor);
 }
 
 body {
     background-color: var(--backgroundColor);
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
+}
+
+/* Outer-main container */
+
+#outer-main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
 }
 
 /* Nav */
@@ -24,54 +32,43 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: var(--trimColor);
 }
 
 #nav-buttons {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 #logo {
     justify-content: center;
     align-items: center;
-    background-color: rgb(100, 194, 163);
-    font-size: 2rem;
-    font-weight: 900;
-    padding: 10px;
+    width: 60px;
+    height: 60px;
 }
 
-/* Main */
+/* Inner-main container */
 
-main {
+#inner-main {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
     padding: 20px;
-    column-gap: 50px;
+    gap: 30px;
+    border: 1px solid var(--trimColor);
 }
-
-/* Right container */
 
 h1 span {
     color: var(--trimColor);
 }
 
-#right-container div span {
+#inner-main div span {
     color: var(--trimColor);
     font-weight: bold;
 }
 
-#right-container div, #right-container h1 {
-    padding: 10px;
-}
-
-/* Links container */
-
-links-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.link-btn:hover, #resume-download-btn:hover {
+.link-btn:hover {
     opacity: 80%;
     cursor: pointer;
 }
